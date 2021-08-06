@@ -8,8 +8,15 @@ const router = new Router({
     {
       path: '/',
       name: 'index',
-      component: (resolve) => {
+      component: resolve => {
         require(['../views/index.vue'], resolve)
+      }
+    },
+    {
+      path: '/home',
+      name: 'home',
+      component: resolve => {
+        require(['../views/home/index.vue'], resolve)
       }
     }
   ]
