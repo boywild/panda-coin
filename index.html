@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>熊猫币</title>
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="referrer" content="no-referrer" />
+  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1, user-scalable=no, width=device-width, height=device-height,user-scalable=no"/>
+  <meta name="x5-orientation" content="portrait">
+  <% for (var i in htmlWebpackPlugin.options.cdn && htmlWebpackPlugin.options.cdn.script) { %>
+    <script src="<%= htmlWebpackPlugin.options.cdn.script[i].url %>"></script>
+  <% } %>
+</head>
+<body>
+  <div id="app"></div>
+  <!-- built files will be auto injected -->
+</body>
+</html>
